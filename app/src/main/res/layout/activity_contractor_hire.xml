@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bapps.saisathvik.nirmaan.Fragment.SignUpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/profile_layout"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/acc_email_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_email_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/business_card"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_contractor_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Contractor ID"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/acc_company_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_company_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/contractorname"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_contractor_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Contractor Name"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_contractor_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_contractor_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/companynamecontractor"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_contractor_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Company Name"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_Pasword_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_Pasword_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/mailcontractor"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_mail_contractor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="E-Mail"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_phone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_phone_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/smartphone"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_contractor_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Phone Number"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/acc_id_contractor_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_idContractor_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/projectname"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_project_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Project Name"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_id_agency_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_iContractor_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/hiredate"
+
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_hire_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Hire Date"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/acc_id_contractorhire_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_iContractorhiredate_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/hireduration"
+
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_contractor_hireduration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Hire Duration"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_id_agencyIdAutofill_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_AgencyIDAutofill_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/id_card"
+
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_agencyId_Autofill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/id_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Submit"
+                        android:background="#5E35B1"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"/>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

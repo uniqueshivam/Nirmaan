@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_skilldevelopment"
+            android:icon="@drawable/skilldevelopment"
+            android:title="Skill Development Programmes" />
+        <item
+            android:id="@+id/nav_safety"
+            android:icon="@drawable/warning"
+            android:title="Safety" />
+        <item
+            android:id="@+id/nav_EditProfile"
+            android:icon="@drawable/edtprofile"
+            android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/nav_addYourLabours"
+            android:icon="@drawable/adlabours"
+            android:title="Add Your Labours"
+            />
+
+        <item
+            android:id="@+id/nav_viewYourLabours"
+            android:icon="@drawable/viewlabours"
+            android:title="View Your Labours"
+            />
+
+        <item
+            android:id="@+id/nav_wagesList"
+            android:icon="@drawable/wageslist"
+            android:title="Wages List"
+
+
+            />
+
+        <item
+            android:id="@+id/nav_requirementsList"
+            android:icon="@drawable/businessrequirement"
+            android:title="Post Your Requirement"
+
+
+            />
+
+
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/exit"
+            android:title="SignOut"
+            />
+
+    </group>
+</menu>

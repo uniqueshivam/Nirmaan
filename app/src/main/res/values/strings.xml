@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Nirmaan</string>
+
+
+    <!-- Slide 1 Title and description -->
+    <string name="slide_1_title">Contractor Identity</string>
+    <string name="slide_1_desc">Explore the most attractive deal around you buddy</string>
+
+    <!-- Slide 2 Title and description-->
+    <string name="slide_2_title">Agency Identity</string>
+    <string name="slide_2_desc">Explore the most attractive deal around you buddy</string>
+
+    <!-- Slide 2 Title and description-->
+    <string name="slide_3_title">Aadhar Enabled</string>
+    <string name="slide_3_desc">Explore the most attractive deal around you buddy</string>
+
+    <!-- Slide 2 Title and description-->
+    <string name="slide_4_title">Connecting Peers</string>
+    <string name="slide_4_desc">Explore the most attractive deal around you buddy</string>
+
+
+    <string name="my_preference">"com.abc.com.MyPref"</string>
+    <string name="my_prefernce_key">com.abc.com.MyPrefKey</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="quote">Quote</string>
+
+
+</resources>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bapps.saisathvik.nirmaan.Fragment.SignUpFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/profile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/purplematerialbackground">
+
+                    <View
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circular_btn_shape"
+                        android:id="@+id/view" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/acc_dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/boss" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/acc_dp"
+                        android:layout_alignRight="@+id/acc_dp"
+                        android:background="@drawable/circular_btn_shape" />
+
+                    <ImageView
+                        android:id="@+id/choose"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:layout_alignBottom="@+id/acc_dp"
+                        android:layout_alignRight="@+id/acc_dp"
+                        android:src="@drawable/ic_create_pen"
+                        android:tint="#616161" />
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/profile_layout"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="50dp">
+
+                    <LinearLayout
+                        android:id="@+id/acc_email_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_email_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/aadhar"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_aadhar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Aadhar"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/acc_company_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_company_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/labor_man"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_labour_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Labour Name"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/id_male_labour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#FF7043"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="18dp"
+                                android:textColor="#212121"
+                                android:text="Male"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/id_female_labour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#FF7043"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="18dp"
+                                android:text="Female"
+                                android:textColor="#212121"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/acc_contractor_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_contractor_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/mapsandflags"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_labour_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Labour Address"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_Pasword_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_Pasword_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/smartphone"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_phonenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Phone Number"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_phone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_phone_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/skill"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_skill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:hint="Skill"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+                            app:met_baseColor="#424242"
+                            app:passwordToggleEnabled="true"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="#424242"
+                            app:met_singleLineEllipsis="true"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/id_skilled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#FF7043"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="18dp"
+                                android:textColor="#212121"
+                                android:text="Skilled"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/id_semiskilled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#FF7043"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="18dp"
+                                android:text="Semi Skilled"
+                                android:textColor="#212121"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/acc_id_contractor_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/acc_idContractor_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:src="@drawable/id_card"
+                            />
+
+                        <TextView
+                            android:id="@+id/id_agency_for_labour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/acc_id__layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/id_blood_labour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="blood group"
+                            android:layout_marginLeft="10dp"
+                            android:padding="10dp"
+                            android:textSize="18sp"
+                            android:textColorHint="#424242"
+                            android:textColor="#424242"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:id="@+id/id_signUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="sign Up"
+                        android:background="#5E35B1"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"/>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
